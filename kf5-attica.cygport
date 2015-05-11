@@ -1,0 +1,25 @@
+KF5_FRAMEWORK="Attica"
+inherit kf5
+
+NAME="kf5-attica"
+VERSION=5.9.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE 5 Open Collaboration Services library"
+DESCRIPTION="Attica is a Qt library that implements the Open Collaboration
+Services API"
+
+PKG_NAMES="libKF5Attica5 libKF5Attica-devel"
+libKF5Attica5_CONTENTS="
+	usr/bin/cygKF5Attica-5.dll
+	usr/share/doc/
+"
+libKF5Attica_devel_REQUIRES="libQt5Core-devel"
+libKF5Attica_devel_CONTENTS="
+	usr/include/KF5/Attica/
+	usr/include/KF5/attica_version.h
+	usr/lib/cmake/KF5Attica/
+	${QT5_MKSPECSDIR#/}/modules/qt_Attica.pri
+	usr/lib/libKF5Attica.dll.a
+	usr/lib/pkgconfig/libKF5Attica.pc
+"
