@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-attica"
-VERSION=5.35.0
+VERSION=5.39.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 Open Collaboration Services library"
@@ -10,6 +10,7 @@ Services API"
 
 PKG_NAMES="libKF5Attica5 libKF5Attica-devel"
 libKF5Attica5_CONTENTS="
+	etc/xdg/attica.categories
 	usr/bin/cygKF5Attica-5.dll
 	usr/share/doc/
 "
